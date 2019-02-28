@@ -1,0 +1,1 @@
+C:\Users\Sean\Desktop\ProfProject\TillApp\TillApp\TillApp.UWP\TillApp.UWP.csproj;x86
