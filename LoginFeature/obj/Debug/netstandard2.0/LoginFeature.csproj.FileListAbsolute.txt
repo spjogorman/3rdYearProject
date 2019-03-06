@@ -1,0 +1,13 @@
+C:\Users\neilb\source\repos\LoginFeature\LoginFeature\LoginFeature\bin\Debug\netstandard2.0\LoginFeature.deps.json
+C:\Users\neilb\source\repos\LoginFeature\LoginFeature\LoginFeature\bin\Debug\netstandard2.0\LoginFeature.dll
+C:\Users\neilb\source\repos\LoginFeature\LoginFeature\LoginFeature\bin\Debug\netstandard2.0\LoginFeature.pdb
+C:\Users\neilb\source\repos\LoginFeature\LoginFeature\LoginFeature\obj\Debug\netstandard2.0\LoginFeature.csprojAssemblyReference.cache
+C:\Users\neilb\source\repos\LoginFeature\LoginFeature\LoginFeature\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\neilb\source\repos\LoginFeature\LoginFeature\LoginFeature\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\neilb\source\repos\LoginFeature\LoginFeature\LoginFeature\obj\Debug\netstandard2.0\LoginFeature.csproj.CoreCompileInputs.cache
+C:\Users\neilb\source\repos\LoginFeature\LoginFeature\LoginFeature\obj\Debug\netstandard2.0\LoginFeature.AssemblyInfoInputs.cache
+C:\Users\neilb\source\repos\LoginFeature\LoginFeature\LoginFeature\obj\Debug\netstandard2.0\LoginFeature.AssemblyInfo.cs
+C:\Users\neilb\source\repos\LoginFeature\LoginFeature\LoginFeature\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\neilb\source\repos\LoginFeature\LoginFeature\LoginFeature\obj\Debug\netstandard2.0\LoginFeature.dll
+C:\Users\neilb\source\repos\LoginFeature\LoginFeature\LoginFeature\obj\Debug\netstandard2.0\LoginFeature.pdb
+C:\Users\neilb\source\repos\LoginFeature\LoginFeature\LoginFeature\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
