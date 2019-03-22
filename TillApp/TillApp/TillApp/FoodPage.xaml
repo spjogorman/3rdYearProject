@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TillApp.FoodPage">
+    <ContentPage.Resources>
+        <Style x:Key="ButtonStyle" TargetType="Button" >
+            <Setter Property="BackgroundColor" Value="LightGray" />
+            <Setter Property="CornerRadius" Value="5" />
+            <Setter Property="Margin" Value="0,0,0,0" />
+            <Setter Property="Padding" Value="0" />
+        </Style>
+        <Style x:Key="ScrollButtonStyle" TargetType="Button" >
+            <Setter Property="BackgroundColor" Value="LightGray" />
+            <Setter Property="CornerRadius" Value="5" />
+            <Setter Property="Margin" Value="0,0,0,0" />
+            <Setter Property="Padding" Value="0" />
+            <Setter Property="HeightRequest" Value="100" />
+        </Style>
+        <Style x:Key="LabelStyle" TargetType="Label" >
+            <Setter Property="XAlign" Value="Center"/>
+            <Setter Property="YAlign" Value="Center"/>
+            <Setter Property="TextColor" Value="White"/>
+        </Style>
+        <Style x:Key="BannerGridStyle" TargetType="Grid" >
+            <Setter Property="BackgroundColor"  Value="#37383a"/>
+            <Setter Property="ColumnSpacing"  Value="5"/>
+            <Setter Property="RowSpacing"  Value="5"/>
+        </Style>
+        <Style x:Key="MiddleGridStyle" TargetType="Grid" >
+            <Setter Property="BackgroundColor"  Value="#787d87"/>
+            <Setter Property="ColumnSpacing"  Value="5"/>
+            <Setter Property="RowSpacing"  Value="5"/>
+        </Style>
+    </ContentPage.Resources>
+
+    <!-- Grid for Separating Page into three main sections (Header, Body, Footer) -->
+    <Grid Style="{StaticResource BannerGridStyle}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- Header of page -->
+        <Grid Style="{StaticResource BannerGridStyle}" VerticalOptions="StartAndExpand" Grid.Row="0" Grid.Column="0">
+            <!-- Parent Grid for Username label, Sign in/Sign out buttons & Total Cost label -->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <!-- Grid for Username label & Sign in/Sign out buttons-->
+            <Grid Grid.Row="0" Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <!-- Username label & Sign in/Sign out buttons -->
+                <Label x:Name="UserLabel" Text="Username" Style="{StaticResource LabelStyle}" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" />
+                <Button Text="Sign In" Clicked="Button_OnClicked" Style="{StaticResource ButtonStyle}" Grid.Row="1" Grid.Column="0" />
+                <Button Text="Logout" Clicked="Button_OnClicked" Style="{StaticResource ButtonStyle}" Grid.Row="1" Grid.Column="1" />
+            </Grid>
+            <!-- Total Cost label -->
+            <StackLayout VerticalOptions="FillAndExpand" Grid.Row="0" Grid.Column="1" >
+                <Label x:Name="TotalCostLabel" Text="Total&#x0a;€50.00" Style="{StaticResource LabelStyle}" VerticalOptions="FillAndExpand" />
+            </StackLayout>
+        </Grid>
+
+
+        <!-- Body of page -->
+        <ScrollView VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand"  Grid.Row="1" Grid.Column="0">
+            <Grid  Style="{StaticResource MiddleGridStyle}" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Button Text="Meal 1" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="0" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Meal 2" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="0" Grid.Column="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Meal 3" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="0" Grid.Column="2" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Meal 4" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="1" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Meal 5" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="1" Grid.Column="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Meal 6" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="1" Grid.Column="2" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Meal 7" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="2" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Meal 8" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="2" Grid.Column="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Meal 9" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="2" Grid.Column="2" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Meal 10" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="3" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Meal 12" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="3" Grid.Column="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Meal 13" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="3" Grid.Column="2" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Meal 14" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="4" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Meal 15" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="4" Grid.Column="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Meal 16" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="4" Grid.Column="2" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+            </Grid>
+        </ScrollView>
+        
+
+        <!-- Footer of page -->
+        <Grid Style="{StaticResource BannerGridStyle}" VerticalOptions="EndAndExpand" Grid.Row="2" Grid.Column="0">
+            <!-- Parent Grid for Number buttons, Input Label & Checkout Button -->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <!-- Grid for Number buttons & Input Label -->
+            <Grid Grid.Row="0" Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <!-- Number Input Label & Number boxes -->
+                <Frame Padding="5" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" OutlineColor="White">
+                    <Label x:Name="inputLabel" Text="User Input" Style="{StaticResource LabelStyle}" />
+                </Frame>
+
+                <Button Text="1" Clicked="Button_OnClicked" Style="{StaticResource ButtonStyle}" Grid.Row="1" Grid.Column="0" />
+                <Button Text="2" Clicked="Button_OnClicked" Style="{StaticResource ButtonStyle}" Grid.Row="1" Grid.Column="1" />
+                <Button Text="3" Clicked="Button_OnClicked" Style="{StaticResource ButtonStyle}" Grid.Row="1" Grid.Column="2" />
+                <Button Text="4" Clicked="Button_OnClicked" Style="{StaticResource ButtonStyle}" Grid.Row="2" Grid.Column="0" />
+                <Button Text="5" Clicked="Button_OnClicked" Style="{StaticResource ButtonStyle}" Grid.Row="2" Grid.Column="1" />
+                <Button Text="6" Clicked="Button_OnClicked" Style="{StaticResource ButtonStyle}" Grid.Row="2" Grid.Column="2" />
+                <Button Text="7" Clicked="Button_OnClicked" Style="{StaticResource ButtonStyle}" Grid.Row="3" Grid.Column="0" />
+                <Button Text="8" Clicked="Button_OnClicked" Style="{StaticResource ButtonStyle}" Grid.Row="3" Grid.Column="1" />
+                <Button Text="9" Clicked="Button_OnClicked" Style="{StaticResource ButtonStyle}" Grid.Row="3" Grid.Column="2" />
+                <Button Text="." Clicked="Button_OnClicked" Style="{StaticResource ButtonStyle}" Grid.Row="4" Grid.Column="0" />
+                <Button Text="0" Clicked="Button_OnClicked" Style="{StaticResource ButtonStyle}" Grid.Row="4" Grid.Column="1" />
+                <Button Text="Cancel" Clicked="Button_OnClicked" Style="{StaticResource ButtonStyle}" Grid.Row="4" Grid.Column="2" />
+            </Grid>
+            <!-- Stack for Checkout Button -->
+            <StackLayout Grid.Row="0" Grid.Column="1">
+                <Button Text="Checkout" Clicked="Button_OnClicked" Style="{StaticResource ButtonStyle}" VerticalOptions="FillAndExpand"/>
+            </StackLayout>
+        </Grid>
+    </Grid>
+</ContentPage>

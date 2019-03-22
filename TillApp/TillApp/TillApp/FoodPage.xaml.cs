@@ -1,0 +1,30 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+namespace TillApp
+{
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class FoodPage : ContentPage
+	{
+		public FoodPage ()
+		{
+			InitializeComponent ();
+		}
+
+        private void Button_OnClicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NumberButton_OnClicked(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
