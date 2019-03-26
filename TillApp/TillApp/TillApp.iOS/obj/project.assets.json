@@ -719,11 +719,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sean\\Desktop\\ProfProject\\TillApp\\TillApp\\TillApp.iOS\\TillApp.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\Sean\\Desktop\\ProfProject\\3rdYearProject\\TillApp\\TillApp\\TillApp.iOS\\TillApp.iOS.csproj",
       "projectName": "TillApp.iOS",
-      "projectPath": "C:\\Users\\Sean\\Desktop\\ProfProject\\TillApp\\TillApp\\TillApp.iOS\\TillApp.iOS.csproj",
+      "projectPath": "C:\\Users\\Sean\\Desktop\\ProfProject\\3rdYearProject\\TillApp\\TillApp\\TillApp.iOS\\TillApp.iOS.csproj",
       "packagesPath": "C:\\Users\\Sean\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sean\\Desktop\\ProfProject\\TillApp\\TillApp\\TillApp.iOS\\obj\\",
+      "outputPath": "C:\\Users\\Sean\\Desktop\\ProfProject\\3rdYearProject\\TillApp\\TillApp\\TillApp.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -740,8 +740,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\Sean\\Desktop\\ProfProject\\TillApp\\TillApp\\TillApp\\TillApp.csproj": {
-              "projectPath": "C:\\Users\\Sean\\Desktop\\ProfProject\\TillApp\\TillApp\\TillApp\\TillApp.csproj"
+            "C:\\Users\\Sean\\Desktop\\ProfProject\\3rdYearProject\\TillApp\\TillApp\\TillApp\\TillApp.csproj": {
+              "projectPath": "C:\\Users\\Sean\\Desktop\\ProfProject\\3rdYearProject\\TillApp\\TillApp\\TillApp\\TillApp.csproj"
             }
           }
         }

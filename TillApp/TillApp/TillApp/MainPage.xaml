@@ -81,7 +81,7 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
             <Button Text="Food" Clicked="FoodButton_Clicked" Style="{StaticResource ButtonStyle}" Grid.Row="0" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-            <Button Text="Drinks" Clicked="Button_OnClicked" Style="{StaticResource ButtonStyle}" Grid.Row="1" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+            <Button Text="Drinks" Clicked="DrinksButton_Clicked" Style="{StaticResource ButtonStyle}" Grid.Row="1" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
         </Grid>
 
         <!-- Footer of page -->

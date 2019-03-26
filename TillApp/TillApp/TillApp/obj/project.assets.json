@@ -350,11 +350,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sean\\Desktop\\ProfProject\\TillApp\\TillApp\\TillApp\\TillApp.csproj",
+      "projectUniqueName": "C:\\Users\\Sean\\Desktop\\ProfProject\\3rdYearProject\\TillApp\\TillApp\\TillApp\\TillApp.csproj",
       "projectName": "TillApp",
-      "projectPath": "C:\\Users\\Sean\\Desktop\\ProfProject\\TillApp\\TillApp\\TillApp\\TillApp.csproj",
+      "projectPath": "C:\\Users\\Sean\\Desktop\\ProfProject\\3rdYearProject\\TillApp\\TillApp\\TillApp\\TillApp.csproj",
       "packagesPath": "C:\\Users\\Sean\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sean\\Desktop\\ProfProject\\TillApp\\TillApp\\TillApp\\obj\\",
+      "outputPath": "C:\\Users\\Sean\\Desktop\\ProfProject\\3rdYearProject\\TillApp\\TillApp\\TillApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

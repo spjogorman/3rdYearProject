@@ -28,5 +28,10 @@ namespace TillApp
         {
             await Navigation.PushAsync(new FoodPage());
         }
+
+        async void DrinksButton_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new DrinksPage());
+        }
     }
 }
