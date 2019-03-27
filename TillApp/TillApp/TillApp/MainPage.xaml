@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:TillApp"
@@ -113,18 +113,18 @@
                 <Frame Padding="5" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" OutlineColor="White">
                     <Label x:Name="inputLabel" Text="User Input" Style="{StaticResource LabelStyle}" />
                 </Frame>
-                
-                <Button Text="1" Clicked="Button_OnClicked" Style="{StaticResource ButtonStyle}" Grid.Row="1" Grid.Column="0" />
-                <Button Text="2" Clicked="Button_OnClicked" Style="{StaticResource ButtonStyle}" Grid.Row="1" Grid.Column="1" />
-                <Button Text="3" Clicked="Button_OnClicked" Style="{StaticResource ButtonStyle}" Grid.Row="1" Grid.Column="2" />
-                <Button Text="4" Clicked="Button_OnClicked" Style="{StaticResource ButtonStyle}" Grid.Row="2" Grid.Column="0" />
-                <Button Text="5" Clicked="Button_OnClicked" Style="{StaticResource ButtonStyle}" Grid.Row="2" Grid.Column="1" />
-                <Button Text="6" Clicked="Button_OnClicked" Style="{StaticResource ButtonStyle}" Grid.Row="2" Grid.Column="2" />
-                <Button Text="7" Clicked="Button_OnClicked" Style="{StaticResource ButtonStyle}" Grid.Row="3" Grid.Column="0" />
-                <Button Text="8" Clicked="Button_OnClicked" Style="{StaticResource ButtonStyle}" Grid.Row="3" Grid.Column="1" />
-                <Button Text="9" Clicked="Button_OnClicked" Style="{StaticResource ButtonStyle}" Grid.Row="3" Grid.Column="2" />
-                <Button Text="." Clicked="Button_OnClicked" Style="{StaticResource ButtonStyle}" Grid.Row="4" Grid.Column="0" />
-                <Button Text="0" Clicked="Button_OnClicked" Style="{StaticResource ButtonStyle}" Grid.Row="4" Grid.Column="1" />
+
+                <Button Text="1" Clicked="btn1Click" Style="{StaticResource ButtonStyle}" Grid.Row="1" Grid.Column="0" />
+                <Button Text="2" Clicked="btn2Click" Style="{StaticResource ButtonStyle}" Grid.Row="1" Grid.Column="1" />
+                <Button Text="3" Clicked="btn3Click" Style="{StaticResource ButtonStyle}" Grid.Row="1" Grid.Column="2" />
+                <Button Text="4" Clicked="btn4Click" Style="{StaticResource ButtonStyle}" Grid.Row="2" Grid.Column="0" />
+                <Button Text="5" Clicked="btn5Click" Style="{StaticResource ButtonStyle}" Grid.Row="2" Grid.Column="1" />
+                <Button Text="6" Clicked="btn6Click" Style="{StaticResource ButtonStyle}" Grid.Row="2" Grid.Column="2" />
+                <Button Text="7" Clicked="btn7Click" Style="{StaticResource ButtonStyle}" Grid.Row="3" Grid.Column="0" />
+                <Button Text="8" Clicked="btn8Click" Style="{StaticResource ButtonStyle}" Grid.Row="3" Grid.Column="1" />
+                <Button Text="9" Clicked="btn9Click" Style="{StaticResource ButtonStyle}" Grid.Row="3" Grid.Column="2" />
+                <Button Text="." Clicked="btnDotClick" Style="{StaticResource ButtonStyle}" Grid.Row="4" Grid.Column="0" />
+                <Button Text="0" Clicked="btn0Click" Style="{StaticResource ButtonStyle}" Grid.Row="4" Grid.Column="1" />
                 <Button Text="Cancel" Clicked="Button_OnClicked" Style="{StaticResource ButtonStyle}" Grid.Row="4" Grid.Column="2" />
             </Grid>
             <!-- Stack for Checkout Button -->
