@@ -19,7 +19,7 @@ namespace TillApp
         public DrinksPage()
         {
             InitializeComponent();
-            onClear(this, null);
+            OnClear(this, null);
         }
 
         private void Button_OnClicked(object sender, EventArgs e)
