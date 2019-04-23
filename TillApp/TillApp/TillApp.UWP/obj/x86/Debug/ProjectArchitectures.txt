@@ -1,1 +1,1 @@
-C:\Users\Sean\Desktop\ProfProject\3rdYearProject\TillApp\TillApp\TillApp.UWP\TillApp.UWP.csproj;x86
+C:\Users\Sean\Desktop\ProffProject\3rdYearProject\TillApp\TillApp\TillApp.UWP\TillApp.UWP.csproj;x86

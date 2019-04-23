@@ -24,7 +24,12 @@ namespace TillApp
 
         private void Button_OnClicked(object sender, EventArgs e)
         {
+          
+        }
 
+        private async void CheckoutButton_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new CheckoutPage());
         }
         
          // Number Button Functionality

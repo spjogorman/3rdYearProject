@@ -14,6 +14,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="CheckoutPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="DrinksPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
