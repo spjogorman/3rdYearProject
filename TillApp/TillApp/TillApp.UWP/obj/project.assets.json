@@ -7495,11 +7495,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sean\\Desktop\\ProffProject\\3rdYearProject\\TillApp\\TillApp\\TillApp.UWP\\TillApp.UWP.csproj",
+      "projectUniqueName": "C:\\3rdYearProject\\TillApp\\TillApp\\TillApp.UWP\\TillApp.UWP.csproj",
       "projectName": "TillApp.UWP",
-      "projectPath": "C:\\Users\\Sean\\Desktop\\ProffProject\\3rdYearProject\\TillApp\\TillApp\\TillApp.UWP\\TillApp.UWP.csproj",
+      "projectPath": "C:\\3rdYearProject\\TillApp\\TillApp\\TillApp.UWP\\TillApp.UWP.csproj",
       "packagesPath": "C:\\Users\\Sean\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sean\\Desktop\\ProffProject\\3rdYearProject\\TillApp\\TillApp\\TillApp.UWP\\obj\\",
+      "outputPath": "C:\\3rdYearProject\\TillApp\\TillApp\\TillApp.UWP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -7519,8 +7519,8 @@
       "frameworks": {
         "uap10.0.16299": {
           "projectReferences": {
-            "C:\\Users\\Sean\\Desktop\\ProffProject\\3rdYearProject\\TillApp\\TillApp\\TillApp\\TillApp.csproj": {
-              "projectPath": "C:\\Users\\Sean\\Desktop\\ProffProject\\3rdYearProject\\TillApp\\TillApp\\TillApp\\TillApp.csproj"
+            "C:\\3rdYearProject\\TillApp\\TillApp\\TillApp\\TillApp.csproj": {
+              "projectPath": "C:\\3rdYearProject\\TillApp\\TillApp\\TillApp\\TillApp.csproj"
             }
           }
         }

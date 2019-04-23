@@ -106,8 +106,8 @@ public class MonoPackageManager {
 class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		/* We need to ensure that "TillApp.Android.dll" comes first in this list. */
+		"TillApp.Android.dll",
 		"FormsViewGroup.dll",
-		"Newtonsoft.Json.dll",
 		"TillApp.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
 		"Xamarin.Android.Arch.Lifecycle.Common.dll",

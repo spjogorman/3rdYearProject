@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>ec0cc741-fd3e-485c-81be-68815c480690</PackageIdentityName>
     <PackageIdentityPublisher>CN=28d8d387-7a20-4c31-967a-e9595e3c1bfa</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Sean\Desktop\ProffProject\3rdYearProject\TillApp\TillApp\TillApp.UWP\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\3rdYearProject\TillApp\TillApp\TillApp.UWP\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\Sean\Desktop\ProffProject\3rdYearProject\TillApp\TillApp\TillApp.UWP\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\3rdYearProject\TillApp\TillApp\TillApp.UWP\bin\x86\Debug\AppX</LayoutDir>
     <RegisteredManifestChecksum>4479DA8420E620A33B58DCAF1194FDCA54AC87AD04C928391ED161D5DB1D7E59</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>39d3546d-919f-4bc0-8d8b-b00b2e9d8f8b_1.0.0.0_x86__6ks89jrwd76a8</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>39d3546d-919f-4bc0-8d8b-b00b2e9d8f8b_6ks89jrwd76a8!App</RegisteredUserModeAppID>
@@ -27,20 +27,16 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Sean\Desktop\ProffProject\3rdYearProject\TillApp\TillApp\TillApp.UWP\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\3rdYearProject\TillApp\TillApp\TillApp.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-04-23T11:53:24.041</Modified>
+      <Modified>2019-04-23T15:24:54.990</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Sean\Desktop\ProffProject\3rdYearProject\TillApp\TillApp\TillApp.UWP\bin\x86\Debug\TillApp.UWP.exe">
+    <AppxPackagedFile Include="C:\3rdYearProject\TillApp\TillApp\TillApp.UWP\bin\x86\Debug\TillApp.UWP.exe">
       <PackagePath>entrypoint\TillApp.UWP.exe</PackagePath>
-      <Modified>2019-04-23T11:53:22.789</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sean\.nuget\packages\newtonsoft.json\12.0.1\lib\netstandard2.0\Newtonsoft.Json.dll">
-      <PackagePath>Newtonsoft.Json.dll</PackagePath>
-      <Modified>2018-11-27T18:07:34.000</Modified>
+      <Modified>2019-04-23T15:24:54.005</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sean\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.1.5\runtimes\win10-x86\nativeassets\uap10.0.15138\clrcompression.dll">
       <PackagePath>clrcompression.dll</PackagePath>
@@ -714,164 +710,164 @@
       <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
       <Modified>2018-11-13T20:15:22.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sean\Desktop\ProffProject\3rdYearProject\TillApp\TillApp\TillApp\bin\Debug\netstandard2.0\TillApp.dll">
+    <AppxPackagedFile Include="C:\3rdYearProject\TillApp\TillApp\TillApp\bin\Debug\netstandard2.0\TillApp.dll">
       <PackagePath>TillApp.dll</PackagePath>
-      <Modified>2019-04-23T11:53:15.863</Modified>
+      <Modified>2019-04-23T15:24:47.563</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.17763.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2018-10-23T01:33:40.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sean\Desktop\ProffProject\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\LargeTile.scale-100.png">
+    <AppxPackagedFile Include="C:\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\LargeTile.scale-100.png">
       <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-04-23T10:37:44.603</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sean\Desktop\ProffProject\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\LargeTile.scale-200.png">
+    <AppxPackagedFile Include="C:\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\LargeTile.scale-200.png">
       <PackagePath>Assets\LargeTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-04-23T10:37:44.604</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sean\Desktop\ProffProject\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\LargeTile.scale-400.png">
+    <AppxPackagedFile Include="C:\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\LargeTile.scale-400.png">
       <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-04-23T10:37:44.606</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sean\Desktop\ProffProject\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\SmallTile.scale-100.png">
+    <AppxPackagedFile Include="C:\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\SmallTile.scale-100.png">
       <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-04-23T10:37:44.606</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sean\Desktop\ProffProject\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\SmallTile.scale-200.png">
+    <AppxPackagedFile Include="C:\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\SmallTile.scale-200.png">
       <PackagePath>Assets\SmallTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-04-23T10:37:44.607</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sean\Desktop\ProffProject\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\SmallTile.scale-400.png">
+    <AppxPackagedFile Include="C:\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\SmallTile.scale-400.png">
       <PackagePath>Assets\SmallTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-04-23T10:37:44.608</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sean\Desktop\ProffProject\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-04-23T10:37:44.609</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sean\Desktop\ProffProject\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-04-23T10:37:44.610</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sean\Desktop\ProffProject\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\SplashScreen.scale-400.png">
+    <AppxPackagedFile Include="C:\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\SplashScreen.scale-400.png">
       <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-04-23T10:37:44.611</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sean\Desktop\ProffProject\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\Square150x150Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\Square150x150Logo.scale-100.png">
       <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-04-23T10:37:44.612</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sean\Desktop\ProffProject\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-04-23T10:37:44.613</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sean\Desktop\ProffProject\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\Square150x150Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\Square150x150Logo.scale-400.png">
       <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-04-23T10:37:44.614</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sean\Desktop\ProffProject\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-04-23T10:37:44.615</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sean\Desktop\ProffProject\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-04-23T10:37:44.616</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sean\Desktop\ProffProject\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-04-23T10:37:44.617</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sean\Desktop\ProffProject\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\Square44x44Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\Square44x44Logo.scale-100.png">
       <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-04-23T10:37:44.618</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sean\Desktop\ProffProject\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-04-23T10:37:44.619</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sean\Desktop\ProffProject\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\Square44x44Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\Square44x44Logo.scale-400.png">
       <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-04-23T10:37:44.620</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sean\Desktop\ProffProject\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\Square44x44Logo.targetsize-16.png">
+    <AppxPackagedFile Include="C:\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\Square44x44Logo.targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-04-23T10:37:44.621</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sean\Desktop\ProffProject\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\Square44x44Logo.targetsize-256.png">
+    <AppxPackagedFile Include="C:\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\Square44x44Logo.targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-04-23T10:37:44.622</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sean\Desktop\ProffProject\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\Square44x44Logo.targetsize-48.png">
+    <AppxPackagedFile Include="C:\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\Square44x44Logo.targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-04-23T10:37:44.624</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sean\Desktop\ProffProject\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-04-23T10:37:44.626</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sean\Desktop\ProffProject\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\StoreLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\StoreLogo.scale-200.png">
       <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-04-23T10:37:44.632</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sean\Desktop\ProffProject\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\StoreLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\StoreLogo.scale-400.png">
       <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-04-23T10:37:44.633</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sean\Desktop\ProffProject\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\Wide310x150Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\Wide310x150Logo.scale-100.png">
       <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-04-23T10:37:44.634</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sean\Desktop\ProffProject\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-04-23T10:37:44.635</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sean\Desktop\ProffProject\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\Wide310x150Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\3rdYearProject\TillApp\TillApp\TillApp.UWP\Assets\Wide310x150Logo.scale-400.png">
       <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-04-23T10:37:44.637</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sean\Desktop\ProffProject\3rdYearProject\TillApp\TillApp\TillApp.UWP\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\3rdYearProject\TillApp\TillApp\TillApp.UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2019-04-23T10:37:44.643</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sean\Desktop\ProffProject\3rdYearProject\TillApp\TillApp\TillApp.UWP\bin\x86\Debug\TillApp.UWP.xr.xml">
+    <AppxPackagedFile Include="C:\3rdYearProject\TillApp\TillApp\TillApp.UWP\bin\x86\Debug\TillApp.UWP.xr.xml">
       <PackagePath>TillApp.UWP.xr.xml</PackagePath>
       <Modified>2019-04-23T10:37:46.074</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sean\Desktop\ProffProject\3rdYearProject\TillApp\TillApp\TillApp.UWP\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\3rdYearProject\TillApp\TillApp\TillApp.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-04-23T11:53:22.493</Modified>
+      <Modified>2019-04-23T15:24:53.767</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sean\Desktop\ProffProject\3rdYearProject\TillApp\TillApp\TillApp.UWP\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\3rdYearProject\TillApp\TillApp\TillApp.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2019-04-23T11:53:22.494</Modified>
+      <Modified>2019-04-23T15:24:53.768</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -881,13 +877,13 @@
       <PackagePath>Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml</PackagePath>
       <Modified>2018-11-13T20:15:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sean\Desktop\ProffProject\3rdYearProject\TillApp\TillApp\TillApp.UWP\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\3rdYearProject\TillApp\TillApp\TillApp.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2019-04-23T11:13:48.846</Modified>
+      <Modified>2019-04-23T14:35:55.262</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sean\Desktop\ProffProject\3rdYearProject\TillApp\TillApp\TillApp.UWP\bin\x86\Debug\Core\TillApp.UWP.exe">
+    <AppxPackagedFile Include="C:\3rdYearProject\TillApp\TillApp\TillApp.UWP\bin\x86\Debug\Core\TillApp.UWP.exe">
       <PackagePath>TillApp.UWP.exe</PackagePath>
-      <Modified>2019-04-23T11:53:24.032</Modified>
+      <Modified>2019-04-23T15:24:54.983</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

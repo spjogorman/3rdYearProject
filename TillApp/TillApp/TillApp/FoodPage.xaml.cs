@@ -21,6 +21,11 @@ namespace TillApp
 			OnClear(this, null);
 		}
 
+        private async void CheckoutButton_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new CheckoutPage());
+        }
+
         private void Button_OnClicked(object sender, EventArgs e)
         {
 

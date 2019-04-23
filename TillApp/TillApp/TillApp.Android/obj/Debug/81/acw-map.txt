@@ -1,3 +1,6 @@
+TillApp.Droid.MainActivity, TillApp.Android;md54eb6227f86df0b8bd449958137834121.MainActivity
+TillApp.Droid.MainActivity;md54eb6227f86df0b8bd449958137834121.MainActivity
+tillapp.droid.MainActivity;md54eb6227f86df0b8bd449958137834121.MainActivity
 Android.Support.V4.View.ActionProvider+ISubUiVisibilityListenerImplementor, Xamarin.Android.Support.Compat;mono.android.support.v4.view.ActionProvider_SubUiVisibilityListenerImplementor
 Android.Support.V4.View.ActionProvider.ISubUiVisibilityListenerImplementor;mono.android.support.v4.view.ActionProvider_SubUiVisibilityListenerImplementor
 mono.android.support.v4.view.ActionProvider_SubUiVisibilityListenerImplementor;mono.android.support.v4.view.ActionProvider_SubUiVisibilityListenerImplementor

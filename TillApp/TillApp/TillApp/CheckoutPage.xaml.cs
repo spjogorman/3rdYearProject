@@ -21,9 +21,51 @@ namespace TillApp
 			InitializeComponent ();
 		}
 
-        private void Button_OnClicked(object sender, EventArgs e)
-        {
+        
 
+        private async void Button_OnClicked(object sender, EventArgs e)
+        {
+           
+
+        }
+
+        private async void CompleteButton_Clicked(object sender, EventArgs e)
+        {
+            //these aren't actually implemented, just placeholders for database variables
+            bool answer = false;
+            double totalCost = 0;
+            double paid = 0;
+            double diff = 0;
+
+            if (totalCost > paid)
+            {
+                //if paid amount is less than total cost, display error message
+                await DisplayAlert("Payment Incomplete", "Insufficient funds to complete payment", "OK");
+            }
+
+            else if (paid >= totalCost)
+            {
+                //if paid amount is greater than or equal to total cost, calculate difference
+                diff = totalCost - paid;
+
+                answer = await DisplayAlert("Payment ready to complete", "Finalize order?", "Yes", "No");
+
+                //If user clicks yes, finalize order and then push new main page
+                if (answer == true)
+                {
+                    //----------- upload order to database at this point ------------------------
+
+                    //pushes new mainpage
+                    await Navigation.PushAsync(new MainPage());
+                }
+
+                //if user clicks 'No', stays on checkout page
+                else
+                {
+                    //No code needed here
+                }
+            }
+            
         }
 
         // Number Button Functionality
@@ -54,6 +96,11 @@ namespace TillApp
                     secondNumber = number;
                 }
             }
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+
         }
 
         // Clears input
