@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TillApp.Model;
 using Xamarin.Forms;
 
 namespace TillApp
@@ -28,7 +29,7 @@ namespace TillApp
         {
             await Navigation.PushAsync(new CheckoutPage());
         }
-
+          
         async void FoodButton_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new FoodPage());
@@ -79,5 +80,22 @@ namespace TillApp
             currentState = 1;
             this.userInput.Text = "0";
         }
-    }
-}
+
+        void SignIn(object sender, EventArgs e)
+        {
+            Users user = new Users(userInput.Text);
+
+            if (user.CheckUser())   // true
+            {
+                DisplayAlert("Login", "Login Successful", "Ok");
+            }
+            else   // false 
+            {
+                DisplayAlert("Login", "Login Failed", "Ok");
+            }
+
+
+        }   // SignIn()
+
+    }   // Main Page
+}   // namespace
