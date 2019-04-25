@@ -556,7 +556,7 @@
   },
   "libraries": {
     "Xamarin.Forms/3.4.0.1008975": {
-      "sha512": "tM9syeev45u92OFENGjq+Zw8WiEwLJFiXe317XpL9SY2RRk9sm2fc1lDVjzwz0da+5ZP5fi24NAPsPQdxBdMwQ==",
+      "sha512": "036/h8HtzRFgTrfhY57IeHoYRsPTO2XTA6uUFdmZzw2QR1sdszfofhI9HrCJTRx6fCzmjPg5Cxk5chYrjKarNw==",
       "type": "package",
       "path": "xamarin.forms/3.4.0.1008975",
       "files": [
@@ -714,20 +714,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\neilb\\.nuget\\packages\\": {}
+    "C:\\Users\\Matt\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\neilb\\OneDrive\\Documents\\GitHub\\3rdYearProject\\TillApp\\TillApp\\TillApp.iOS\\TillApp.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\Matt\\Documents\\GitHub\\3rdYearProject\\TillApp\\TillApp\\TillApp.iOS\\TillApp.iOS.csproj",
       "projectName": "TillApp.iOS",
-      "projectPath": "C:\\Users\\neilb\\OneDrive\\Documents\\GitHub\\3rdYearProject\\TillApp\\TillApp\\TillApp.iOS\\TillApp.iOS.csproj",
-      "packagesPath": "C:\\Users\\neilb\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\neilb\\OneDrive\\Documents\\GitHub\\3rdYearProject\\TillApp\\TillApp\\TillApp.iOS\\obj\\",
+      "projectPath": "C:\\Users\\Matt\\Documents\\GitHub\\3rdYearProject\\TillApp\\TillApp\\TillApp.iOS\\TillApp.iOS.csproj",
+      "packagesPath": "C:\\Users\\Matt\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Matt\\Documents\\GitHub\\3rdYearProject\\TillApp\\TillApp\\TillApp.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\neilb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Matt\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -740,8 +740,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\neilb\\OneDrive\\Documents\\GitHub\\3rdYearProject\\TillApp\\TillApp\\TillApp\\TillApp.csproj": {
-              "projectPath": "C:\\Users\\neilb\\OneDrive\\Documents\\GitHub\\3rdYearProject\\TillApp\\TillApp\\TillApp\\TillApp.csproj"
+            "C:\\Users\\Matt\\Documents\\GitHub\\3rdYearProject\\TillApp\\TillApp\\TillApp\\TillApp.csproj": {
+              "projectPath": "C:\\Users\\Matt\\Documents\\GitHub\\3rdYearProject\\TillApp\\TillApp\\TillApp\\TillApp.csproj"
             }
           }
         }
