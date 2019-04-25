@@ -81,21 +81,42 @@ namespace TillApp
             this.userInput.Text = "0";
         }
 
-        void SignIn(object sender, EventArgs e)
+       void SignIn(object sender, EventArgs e)
         {
-            Users user = new Users(userInput.Text);
+            var dbID = userInput.Text;
+            var newdbID = dbID.Replace(",", "");
+            string connectionString = "Server=18.216.25.150;Database=professionalpracticetillsystem;Uid=matt;Pwd=matt";
+            string selectQuery = String.Format("select user_name from users where user_id = MD5('"+newdbID+"');");
+            MySqlConnection cConn = new MySqlConnection(connectionString);
+            cConn.Open();
+            
 
-            if (user.CheckUser())   // true
+            MySqlCommand command = new MySqlCommand(selectQuery, cConn);
+            System.Diagnostics.Debug.WriteLine("Connected");
+
+            command.Connection = cConn;
+            command.CommandText = selectQuery;
+            var result = command.ExecuteReader();
+            var exists = result.HasRows;
+
+            if (exists == true)   // true
             {
-                DisplayAlert("Login", "Login Successful", "Ok");
+                while (result.Read())
+                {
+                    String name = (string)result["user_name"];
+                    DisplayAlert("Login", "Welcome " + name, "Ok");
+                    login = 1;
+                    loggedOn();
+                }
+               
             }
             else   // false 
             {
                 DisplayAlert("Login", "Login Failed", "Ok");
             }
 
-
-        }   // SignIn()
+            cConn.Close();
+        }
 
     }   // Main Page
 }   // namespace

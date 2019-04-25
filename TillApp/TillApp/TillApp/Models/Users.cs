@@ -33,15 +33,6 @@ namespace TillApp.Model
             return NeilB;
         }
 
-        public bool CheckUser()
-        {
-            if (this.UserId.Equals("999")) // Will have to search though DB to find match
-            {
-                return true;
-            }
-            else
-                return false;
-        }
 
 
 
