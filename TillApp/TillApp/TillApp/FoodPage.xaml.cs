@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -28,7 +29,25 @@ namespace TillApp
 
         private void Button_OnClicked(object sender, EventArgs e)
         {
+            string connectionString = "Server=18.216.25.150;Database=professionalpracticetillsystem;Uid=matt;Pwd=matt";
+            Button button = (Button)sender;
+            string name = button.Text;
 
+
+            string selectQuery = String.Format("update food set food_quantity = food_quantity + 1 where food_name = '" + name + "';");
+            MySqlConnection cConn = new MySqlConnection(connectionString);
+            cConn.Open();
+
+
+            MySqlCommand command = new MySqlCommand(selectQuery, cConn);
+            System.Diagnostics.Debug.WriteLine("Connected");
+
+            command.Connection = cConn;
+            command.CommandText = selectQuery;
+            var result = command.ExecuteReader();
+            var exists = result.HasRows;
+            System.Diagnostics.Debug.WriteLine(exists);
+            cConn.Close();
         }
 
         private void NumberButton_OnClicked(object sender, EventArgs e)
