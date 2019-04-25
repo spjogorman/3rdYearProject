@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -105,8 +106,8 @@ namespace TillApp
                 {
                     String name = (string)result["user_name"];
                     DisplayAlert("Login", "Welcome " + name, "Ok");
-                    login = 1;
-                    loggedOn();
+                   // login = 1;
+                   // loggedOn();
                 }
                
             }
