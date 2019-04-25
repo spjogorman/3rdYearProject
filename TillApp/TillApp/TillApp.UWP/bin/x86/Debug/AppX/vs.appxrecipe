@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\Matt\Documents\GitHub\3rdYearProject\TillApp\TillApp\TillApp.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-04-25T15:03:18.488</Modified>
+      <Modified>2019-04-25T15:27:25.458</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Matt\Documents\GitHub\3rdYearProject\TillApp\TillApp\TillApp.UWP\bin\x86\Debug\TillApp.UWP.exe">
       <PackagePath>entrypoint\TillApp.UWP.exe</PackagePath>
-      <Modified>2019-04-25T15:03:17.356</Modified>
+      <Modified>2019-04-25T15:27:24.433</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Matt\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.1.5\runtimes\win10-x86\nativeassets\uap10.0.15138\clrcompression.dll">
       <PackagePath>clrcompression.dll</PackagePath>
@@ -740,7 +740,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Matt\Documents\GitHub\3rdYearProject\TillApp\TillApp\TillApp\bin\Debug\netstandard2.0\TillApp.dll">
       <PackagePath>TillApp.dll</PackagePath>
-      <Modified>2019-04-25T15:01:09.737</Modified>
+      <Modified>2019-04-25T15:27:19.921</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Matt\Documents\GitHub\3rdYearProject\TillApp\TillApp\TillApp\bin\Debug\netstandard2.0\MySql.Data.dll">
       <PackagePath>MySql.Data.dll</PackagePath>
@@ -899,11 +899,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Matt\Documents\GitHub\3rdYearProject\TillApp\TillApp\TillApp.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-04-25T15:03:17.197</Modified>
+      <Modified>2019-04-25T15:27:24.273</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Matt\Documents\GitHub\3rdYearProject\TillApp\TillApp\TillApp.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2019-04-25T15:03:17.197</Modified>
+      <Modified>2019-04-25T15:27:24.274</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -919,7 +919,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Matt\Documents\GitHub\3rdYearProject\TillApp\TillApp\TillApp.UWP\bin\x86\Debug\Core\TillApp.UWP.exe">
       <PackagePath>TillApp.UWP.exe</PackagePath>
-      <Modified>2019-04-25T15:03:18.483</Modified>
+      <Modified>2019-04-25T15:27:25.450</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

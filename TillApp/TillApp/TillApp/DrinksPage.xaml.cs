@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,7 +25,9 @@ namespace TillApp
 
         private void Button_OnClicked(object sender, EventArgs e)
         {
-          
+       
+
+
         }
 
         private async void CheckoutButton_Clicked(object sender, EventArgs e)

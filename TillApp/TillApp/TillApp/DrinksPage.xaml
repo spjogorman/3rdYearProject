@@ -91,21 +91,21 @@
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <Button Text="Drink 1" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="0" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-                <Button Text="Drink 2" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="0" Grid.Column="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-                <Button Text="Drink 3" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="0" Grid.Column="2" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-                <Button Text="Drink 4" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="1" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-                <Button Text="Drink 5" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="1" Grid.Column="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-                <Button Text="Drink 6" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="1" Grid.Column="2" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-                <Button Text="Drink 7" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="2" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-                <Button Text="Drink 8" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="2" Grid.Column="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-                <Button Text="Drink 9" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="2" Grid.Column="2" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-                <Button Text="Drink 10" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="3" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-                <Button Text="Drink 12" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="3" Grid.Column="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-                <Button Text="Drink 13" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="3" Grid.Column="2" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-                <Button Text="Drink 14" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="4" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-                <Button Text="Drink 15" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="4" Grid.Column="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-                <Button Text="Drink 16" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="4" Grid.Column="2" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Water" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="0" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Coke" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="0" Grid.Column="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Fanta" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="0" Grid.Column="2" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Coke Zero" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="1" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Diet Coke" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="1" Grid.Column="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Sprite" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="1" Grid.Column="2" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Lucozade" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="2" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Red Wine" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="2" Grid.Column="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                <Button Text="White Wine" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="2" Grid.Column="2" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Hop House" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="3" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Guinness" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="3" Grid.Column="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Outcider" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="3" Grid.Column="2" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Bulmers" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="4" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Tea" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="4" Grid.Column="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Coffee" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="4" Grid.Column="2" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
             </Grid>
         </ScrollView>
 
