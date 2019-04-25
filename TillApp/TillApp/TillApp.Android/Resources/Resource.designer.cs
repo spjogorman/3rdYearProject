@@ -26,7 +26,6 @@ namespace TillApp.Droid
 		
 		public static void UpdateIdValues()
 		{
-			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::TillApp.Droid.Resource.Attribute.actionBarSize;
 		}
 		
 		public partial class Animation

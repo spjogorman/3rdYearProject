@@ -10,11 +10,40 @@
             <Setter Property="Padding" Value="0" />
         </Style>
         <Style x:Key="ScrollButtonStyle" TargetType="Button" >
-            <Setter Property="BackgroundColor" Value="LightGray" />
+            <Setter Property="BackgroundColor" Value="#6bff66" />
             <Setter Property="CornerRadius" Value="5" />
             <Setter Property="Margin" Value="0,0,0,0" />
             <Setter Property="Padding" Value="0" />
             <Setter Property="HeightRequest" Value="100" />
+            <Setter Property="VerticalOptions" Value="FillAndExpand" />
+            <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+        </Style>
+        <Style x:Key="VegButtonStyle" TargetType="Button" >
+            <Setter Property="BackgroundColor" Value="#c6ffc6" />
+            <Setter Property="CornerRadius" Value="5" />
+            <Setter Property="Margin" Value="0,0,0,0" />
+            <Setter Property="Padding" Value="0" />
+            <Setter Property="HeightRequest" Value="100" />
+            <Setter Property="VerticalOptions" Value="FillAndExpand" />
+            <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+        </Style>
+        <Style x:Key="MeatButtonStyle" TargetType="Button" >
+            <Setter Property="BackgroundColor" Value="#ffcccc" />
+            <Setter Property="CornerRadius" Value="5" />
+            <Setter Property="Margin" Value="0,0,0,0" />
+            <Setter Property="Padding" Value="0" />
+            <Setter Property="HeightRequest" Value="100" />
+            <Setter Property="VerticalOptions" Value="FillAndExpand" />
+            <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+        </Style>
+        <Style x:Key="FishButtonStyle" TargetType="Button" >
+            <Setter Property="BackgroundColor" Value="#c6cdff" />
+            <Setter Property="CornerRadius" Value="5" />
+            <Setter Property="Margin" Value="0,0,0,0" />
+            <Setter Property="Padding" Value="0" />
+            <Setter Property="HeightRequest" Value="100" />
+            <Setter Property="VerticalOptions" Value="FillAndExpand" />
+            <Setter Property="HorizontalOptions" Value="FillAndExpand" />
         </Style>
         <Style x:Key="LabelStyle" TargetType="Label" >
             <Setter Property="XAlign" Value="Center"/>
@@ -91,24 +120,26 @@
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <Button Text="Chicken Kiev" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="0" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-                <Button Text="Beef" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="0" Grid.Column="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-                <Button Text="Pork" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="0" Grid.Column="2" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-                <Button Text="Pasta" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="1" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-                <Button Text="Meatballs" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="1" Grid.Column="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-                <Button Text="Chicken Goujons" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="1" Grid.Column="2" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-                <Button Text="Beef Burger" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="2" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-                <Button Text="Chicken Burger" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="2" Grid.Column="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-                <Button Text="Cod" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="2" Grid.Column="2" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-                <Button Text="Ham" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="3" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-                <Button Text="Salmon" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="3" Grid.Column="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-                <Button Text="Salad" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="3" Grid.Column="2" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-                <Button Text="Fries" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="4" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-                <Button Text="Ribs" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="4" Grid.Column="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-                <Button Text="Wings" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" HeightRequest = "100" Grid.Row="4" Grid.Column="2" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Broccoli Pasta" Clicked="Button_OnClicked" Style="{StaticResource VegButtonStyle}" Grid.Row="0" Grid.Column="0" />
+                <Button Text="Salad" Clicked="Button_OnClicked" Style="{StaticResource VegButtonStyle}" Grid.Row="0" Grid.Column="1" />
+                <Button Text="Fries" Clicked="Button_OnClicked" Style="{StaticResource VegButtonStyle}" Grid.Row="0" Grid.Column="2" />
+
+                <Button Text="Cod" Clicked="Button_OnClicked" Style="{StaticResource FishButtonStyle}" Grid.Row="1" Grid.Column="0" />
+                <Button Text="Salmon" Clicked="Button_OnClicked" Style="{StaticResource FishButtonStyle}" Grid.Row="1" Grid.Column="1" />
+
+                <Button Text="Chicken Kiev" Clicked="Button_OnClicked" Style="{StaticResource MeatButtonStyle}" Grid.Row="1" Grid.Column="2" />
+                <Button Text="Beef" Clicked="Button_OnClicked" Style="{StaticResource MeatButtonStyle}" Grid.Row="2" Grid.Column="0"/>
+                <Button Text="Pork" Clicked="Button_OnClicked" Style="{StaticResource MeatButtonStyle}" Grid.Row="2" Grid.Column="1" />
+                <Button Text="Meatballs" Clicked="Button_OnClicked" Style="{StaticResource MeatButtonStyle}" Grid.Row="2" Grid.Column="2" />
+                <Button Text="Chicken Goujons" Clicked="Button_OnClicked" Style="{StaticResource MeatButtonStyle}" Grid.Row="3" Grid.Column="0" />
+                <Button Text="Beef Burger" Clicked="Button_OnClicked" Style="{StaticResource MeatButtonStyle}" Grid.Row="3" Grid.Column="1" />
+                <Button Text="Chicken Burger" Clicked="Button_OnClicked" Style="{StaticResource MeatButtonStyle}" Grid.Row="3" Grid.Column="2" />
+                <Button Text="Ham" Clicked="Button_OnClicked" Style="{StaticResource MeatButtonStyle}" Grid.Row="4" Grid.Column="0" />
+                <Button Text="Ribs" Clicked="Button_OnClicked" Style="{StaticResource MeatButtonStyle}" Grid.Row="4" Grid.Column="1" />
+                <Button Text="Wings" Clicked="Button_OnClicked" Style="{StaticResource MeatButtonStyle}" Grid.Row="4" Grid.Column="2" />
             </Grid>
         </ScrollView>
-        
+
 
         <!-- Footer of page -->
         <Grid Style="{StaticResource BannerGridStyle}" VerticalOptions="EndAndExpand" Grid.Row="2" Grid.Column="0">
@@ -155,7 +186,7 @@
             </Grid>
             <!-- Stack for Checkout Button -->
             <StackLayout Grid.Row="0" Grid.Column="1">
-                <Button Text="Checkout" Clicked="CheckoutButton_Clicked" Style="{StaticResource ButtonStyle}" VerticalOptions="FillAndExpand"/>
+                <Button Text="Checkout" Clicked="CheckoutButton_Clicked" Style="{StaticResource ButtonStyle}" VerticalOptions="FillAndExpand" BackgroundColor="#ff7575" TextColor="White" FontAttributes="Bold"/>
             </StackLayout>
         </Grid>
     </Grid>

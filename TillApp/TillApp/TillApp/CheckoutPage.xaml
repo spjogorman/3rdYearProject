@@ -169,7 +169,7 @@
             </Grid>
             <!-- Stack for Checkout Button -->
             <StackLayout Grid.Row="0" Grid.Column="1">
-                <Button Text="Complete" Clicked="CompleteButton_Clicked" Style="{StaticResource ButtonStyle}" VerticalOptions="FillAndExpand"/>
+                <Button Text="Finalize" Clicked="CompleteButton_Clicked" Style="{StaticResource ButtonStyle}" VerticalOptions="FillAndExpand" BackgroundColor="#ff7575" TextColor="White" FontAttributes="Bold"/>
             </StackLayout>
         </Grid>
     </Grid>
