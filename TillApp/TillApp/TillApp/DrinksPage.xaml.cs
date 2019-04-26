@@ -48,7 +48,15 @@ namespace TillApp
 
         void SignOut(object sender, EventArgs e)
         {
-
+            string connectionString = "Server=18.216.25.150;Database=professionalpracticetillsystem;Uid=matt;Pwd=matt";
+            string selectQuery = String.Format("update product set product_quantity = 0 where product_quantity > 0;");
+            MySqlConnection cConn = new MySqlConnection(connectionString);
+            cConn.Open();
+            MySqlCommand command = new MySqlCommand(selectQuery, cConn);
+            command.Connection = cConn;
+            command.CommandText = selectQuery;
+            var result = command.ExecuteReader();
+            cConn.Close();
             Navigation.PushAsync(new MainPage());
             MainPage.login = 0;
         }

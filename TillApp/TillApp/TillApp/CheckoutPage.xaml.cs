@@ -68,7 +68,6 @@ namespace TillApp
 
         private async void CompleteButton_Clicked(object sender, EventArgs e)
         {
-            //these aren't actually implemented, just placeholders for database variables
             bool answer = false;
             double paid = Convert.ToDouble(userInput.Text);
             double diff = 0;
@@ -89,7 +88,15 @@ namespace TillApp
                 //If user clicks yes, finalize order and then push new main page
                 if (answer == true)
                 {
-                    //----------- upload order to database at this point ------------------------
+                    string connectionString = "Server=18.216.25.150;Database=professionalpracticetillsystem;Uid=matt;Pwd=matt";
+                    string selectQuery = String.Format("update product set product_quantity = 0 where product_quantity > 0;");
+                    MySqlConnection cConn = new MySqlConnection(connectionString);
+                    cConn.Open();
+                    MySqlCommand command = new MySqlCommand(selectQuery, cConn);
+                    command.Connection = cConn;
+                    command.CommandText = selectQuery;
+                    var result = command.ExecuteReader();
+                    cConn.Close();
 
                     //pushes new mainpage
                     await Navigation.PushAsync(new MainPage());

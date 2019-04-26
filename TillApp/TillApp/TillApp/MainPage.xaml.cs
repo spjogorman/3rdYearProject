@@ -27,16 +27,13 @@ namespace TillApp
             login = 0;
 
             string connectionString = "Server=18.216.25.150;Database=professionalpracticetillsystem;Uid=matt;Pwd=matt";
-            string selectQuery = String.Format("update product set product_quantity = 0 product_quantity >0;");
+            string selectQuery = String.Format("update product set product_quantity = 0 where product_quantity > 0;");
             MySqlConnection cConn = new MySqlConnection(connectionString);
             cConn.Open();
-
-
             MySqlCommand command = new MySqlCommand(selectQuery, cConn);
-            System.Diagnostics.Debug.WriteLine("Connected");
-
             command.Connection = cConn;
             command.CommandText = selectQuery;
+            var result = command.ExecuteReader();
             cConn.Close();
         }
 
