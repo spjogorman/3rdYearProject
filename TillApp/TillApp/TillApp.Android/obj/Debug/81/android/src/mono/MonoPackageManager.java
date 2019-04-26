@@ -108,6 +108,12 @@ class MonoPackageManager_Resources {
 		/* We need to ensure that "TillApp.Android.dll" comes first in this list. */
 		"TillApp.Android.dll",
 		"FormsViewGroup.dll",
+		"Google.Protobuf.dll",
+		"MySql.Data.dll",
+		"System.Configuration.ConfigurationManager.dll",
+		"System.Security.AccessControl.dll",
+		"System.Security.Permissions.dll",
+		"System.Security.Principal.Windows.dll",
 		"TillApp.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
 		"Xamarin.Android.Arch.Lifecycle.Common.dll",

@@ -34,7 +34,7 @@ namespace TillApp
             string name = button.Text;
 
 
-            string selectQuery = String.Format("update food set food_quantity = food_quantity + 1 where food_name = '" + name + "';");
+            string selectQuery = String.Format("update product set product_quantity = product_quantity + 1 where product_name = '" + name + "';");
             MySqlConnection cConn = new MySqlConnection(connectionString);
             cConn.Open();
 

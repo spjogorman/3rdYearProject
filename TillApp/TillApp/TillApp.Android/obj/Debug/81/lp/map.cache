@@ -1,5 +1,11 @@
 FormsViewGroup
+Google.Protobuf
+MySql.Data
+System.Configuration.ConfigurationManager
 System.Runtime
+System.Security.AccessControl
+System.Security.Permissions
+System.Security.Principal.Windows
 TillApp
 Xamarin.Android.Arch.Core.Common
 Xamarin.Android.Arch.Lifecycle.Common
@@ -25,3 +31,5 @@ Xamarin.Forms.Platform.Android
 Xamarin.Forms.Platform
 Xamarin.Forms.Xaml
 netstandard
+System.Reflection.Extensions
+System.Text.Encoding.CodePages

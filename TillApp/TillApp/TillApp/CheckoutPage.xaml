@@ -58,20 +58,13 @@
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-            <!-- Back Button-->
-            <StackLayout VerticalOptions="FillAndExpand" Grid.Row="0" Grid.Column="0" >
-                <Button Text="Back" Clicked="Button_OnClicked" Style="{StaticResource ButtonStyle}" VerticalOptions="FillAndExpand"/>
-            </StackLayout>
-            <!-- Total Cost label -->
-            <StackLayout VerticalOptions="FillAndExpand" Grid.Row="0" Grid.Column="1" >
-                <Label x:Name="TotalCostLabel" Text="Total&#x0a;€50.00" Style="{StaticResource LabelStyle}" VerticalOptions="FillAndExpand" />
-            </StackLayout>
         </Grid>
         
 
 
         <!-- Body of page -->
-        <Grid Style="{StaticResource BannerGridStyle}" VerticalOptions="StartAndExpand" Grid.Row="1" Grid.Column="0">
+        <ScrollView  HorizontalOptions="FillAndExpand"  Grid.Row="2" Grid.Column="0">
+            <Grid Style="{StaticResource BannerGridStyle}" VerticalOptions="StartAndExpand" Grid.Row="1" Grid.Column="0">
             <!-- Parent Grid for Back Button & Total Cost Label -->
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
@@ -79,15 +72,28 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="4*" />
-                <ColumnDefinition Width="2*" />
-            </Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
             <Label Text="Quantity" Style="{StaticResource LabelStyle}" VerticalOptions="FillAndExpand"  Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" HorizontalTextAlignment="Start" />
             <Label Text="Item" Style="{StaticResource LabelStyle}" VerticalOptions="FillAndExpand"  Grid.Row="0" Grid.Column="3" HorizontalTextAlignment="Start" />
             <Label Text="Subtotal" Style="{StaticResource LabelStyle}" VerticalOptions="FillAndExpand"  Grid.Row="0" Grid.Column="4" HorizontalTextAlignment="Center" />
-        </Grid>
-        <ScrollView VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand"  Grid.Row="2" Grid.Column="0">
+            <ListView x:Name="ListViewchkout" >
+                <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding Name}"  Style="{StaticResource LabelStyle}" />
+                                    <Label Text="{Binding Price}"  Style="{StaticResource LabelStyle}"/>
+                                    <Label Text="{Binding Quantity}" Style="{StaticResource LabelStyle}" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            </Grid>
+        </ScrollView>
+        
+        <ScrollView VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand"  Grid.Row="3" Grid.Column="0">
             <Grid  Style="{StaticResource MiddleGridStyle}" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*" />
@@ -103,29 +109,12 @@
                     <ColumnDefinition Width="4*" />
                     <ColumnDefinition Width="2*" />
                 </Grid.ColumnDefinitions>
-                <Button Text="-" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" Grid.Row="0" Grid.Column="0"/>
-                <Label Text="3" Style="{StaticResource LabelStyle}" VerticalOptions="Center"  Grid.Row="0" Grid.Column="1" HorizontalTextAlignment="Center" />
-                <Button Text="+" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" Grid.Row="0" Grid.Column="2" />
-                <Label Text="Fish" Style="{StaticResource LabelStyle}" VerticalOptions="Center"  Grid.Row="0" Grid.Column="3" HorizontalTextAlignment="Start" />
-                <Label Text="€10.00" Style="{StaticResource LabelStyle}" VerticalOptions="Center"  Grid.Row="0" Grid.Column="4" HorizontalTextAlignment="Center" />
-
-                <Button Text="-" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" Grid.Row="1" Grid.Column="0" />
-                <Label Text="3" Style="{StaticResource LabelStyle}" VerticalOptions="Center"  Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center" />
-                <Button Text="+" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}"  Grid.Row="1" Grid.Column="2" />
-                <Label Text="Beef" Style="{StaticResource LabelStyle}" VerticalOptions="Center"  Grid.Row="1" Grid.Column="3" HorizontalTextAlignment="Start" />
-                <Label Text="€12.50" Style="{StaticResource LabelStyle}" VerticalOptions="Center"  Grid.Row="1" Grid.Column="4" HorizontalTextAlignment="Center" />
-
-                <Button Text="-" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" Grid.Row="2" Grid.Column="0" />
-                <Label Text="3" Style="{StaticResource LabelStyle}" VerticalOptions="Center"  Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="Center" />
-                <Button Text="+" Clicked="Button_OnClicked" Style="{StaticResource ScrollButtonStyle}" Grid.Row="2" Grid.Column="2" />
-                <Label Text="Coke" Style="{StaticResource LabelStyle}" VerticalOptions="Center"  Grid.Row="2" Grid.Column="3" HorizontalTextAlignment="Start" />
-                <Label Text="€3.50" Style="{StaticResource LabelStyle}" VerticalOptions="Center"  Grid.Row="2" Grid.Column="4" HorizontalTextAlignment="Center" />
             </Grid>
         </ScrollView>
 
 
         <!-- Footer of page -->
-        <Grid Style="{StaticResource BannerGridStyle}" VerticalOptions="EndAndExpand" Grid.Row="3" Grid.Column="0">
+        <Grid Style="{StaticResource BannerGridStyle}" VerticalOptions="EndAndExpand" Grid.Row="4" Grid.Column="0">
             <!-- Parent Grid for Number buttons, Input Label & Checkout Button -->
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />

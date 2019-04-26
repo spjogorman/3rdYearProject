@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using MySql.Data.MySqlClient;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,40 +16,75 @@ namespace TillApp
 
         int currentState = 1;
         double firstNumber, secondNumber;
+        float totalPrice = 0;
+
 
         public CheckoutPage ()
 		{
-			InitializeComponent ();
-		}
+            string connectionString = "Server=18.216.25.150;Database=professionalpracticetillsystem;Uid=matt;Pwd=matt";
+            InitializeComponent ();
+            onLoad(connectionString);
+
+        }
 
         
 
-        private async void Button_OnClicked(object sender, EventArgs e)
+        private void onLoad(string connectionString)
         {
-           
+            string getNameQuantPrice = String.Format("select product_name name,product_price price,product_quantity quantity from product where product_quantity > 0;");
+            MySqlConnection cConn = new MySqlConnection(connectionString);
+            cConn.Open();
 
+            MySqlCommand commandGet = new MySqlCommand(getNameQuantPrice, cConn);
+            System.Diagnostics.Debug.WriteLine("Connected");
+
+            commandGet.Connection = cConn;
+            commandGet.CommandText = getNameQuantPrice;
+            var result = commandGet.ExecuteReader();
+            List<CheckoutItem> items =new List<CheckoutItem>();
+            while (result.Read())
+            {
+                System.Diagnostics.Debug.WriteLine("Reading");
+                string name = (string)result["name"];
+                int quantity = (int)result["quantity"];
+                float price = (float)result["price"];
+                totalPrice += quantity * price;
+                items.Add(new CheckoutItem { Name = name, Price = price, Quantity = quantity});
+            }
+            result.Close();
+            cConn.Close();
+            DisplayAlert("Your Total Cost is: "+totalPrice, "Press finalize to complete your order", "Ok");
+            ListViewchkout.ItemsSource = items;
         }
+
+        public class CheckoutItem
+        {
+            public string Name { get; set; }
+            public int Quantity { get; set; }
+            public float Price { get; set; }
+        }
+
+
 
         private async void CompleteButton_Clicked(object sender, EventArgs e)
         {
             //these aren't actually implemented, just placeholders for database variables
             bool answer = false;
-            double totalCost = 0;
-            double paid = 0;
+            double paid = Convert.ToDouble(userInput.Text);
             double diff = 0;
 
-            if (totalCost > paid)
+            if (totalPrice > paid)
             {
                 //if paid amount is less than total cost, display error message
                 await DisplayAlert("Payment Incomplete", "Insufficient funds to complete payment", "OK");
             }
 
-            else if (paid >= totalCost)
+            else if (paid >= totalPrice)
             {
                 //if paid amount is greater than or equal to total cost, calculate difference
-                diff = totalCost - paid;
+                diff = paid - totalPrice;
 
-                answer = await DisplayAlert("Payment ready to complete", "Finalize order?", "Yes", "No");
+                answer = await DisplayAlert("Payment Complete. Your change is: "+diff, "Finalize order?", "Yes", "No");
 
                 //If user clicks yes, finalize order and then push new main page
                 if (answer == true)
