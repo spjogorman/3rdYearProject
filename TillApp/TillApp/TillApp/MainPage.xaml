@@ -41,7 +41,7 @@
 
         <!-- Header of page -->
         <Grid Style="{StaticResource BannerGridStyle}" VerticalOptions="StartAndExpand" Grid.Row="0" Grid.Column="0">
-            <!-- Parent Grid for Username label, Sign in/Sign out buttons & Total Cost label -->
+            <!-- Parent Grid for Sign in/Sign out buttons -->
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
@@ -49,7 +49,7 @@
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-            <!-- Grid for Username label & Sign in/Sign out buttons-->
+            <!-- Sign in/Sign out buttons-->
             <Grid Grid.Row="0" Grid.Column="0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*" />
@@ -59,15 +59,10 @@
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <!-- Username label & Sign in/Sign out buttons -->
-                <Label x:Name="UserLabel" Text="Username" Style="{StaticResource LabelStyle}" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" />
+                <!-- Sign in/Sign out buttons -->
                 <Button Text="Sign In" Clicked="SignIn" Style="{StaticResource ButtonStyle}" Grid.Row="1" Grid.Column="0" />
-                <Button Text="Logout" Clicked="Button_OnClicked" Style="{StaticResource ButtonStyle}" Grid.Row="1" Grid.Column="1" />
+                <Button Text="Logout" Clicked="SignOut" Style="{StaticResource ButtonStyle}" Grid.Row="1" Grid.Column="1" />
             </Grid>
-            <!-- Total Cost label -->
-            <StackLayout VerticalOptions="FillAndExpand" Grid.Row="0" Grid.Column="1" >
-                <Label x:Name="TotalCostLabel" Text="Total&#x0a;€50.00" Style="{StaticResource LabelStyle}" VerticalOptions="FillAndExpand" />
-            </StackLayout>
         </Grid>
 
 

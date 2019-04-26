@@ -27,6 +27,13 @@ namespace TillApp
             await Navigation.PushAsync(new CheckoutPage());
         }
 
+        void SignOut(object sender, EventArgs e)
+        {
+            MainPage.login = 0;
+            Navigation.PushAsync(new MainPage());
+            
+        }
+
         private void Button_OnClicked(object sender, EventArgs e)
         {
             string connectionString = "Server=18.216.25.150;Database=professionalpracticetillsystem;Uid=matt;Pwd=matt";

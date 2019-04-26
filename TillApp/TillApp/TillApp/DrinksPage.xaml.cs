@@ -46,6 +46,12 @@ namespace TillApp
             cConn.Close();
         }
 
+        void SignOut(object sender, EventArgs e)
+        {
+
+            Navigation.PushAsync(new MainPage());
+            MainPage.login = 0;
+        }
         private async void CheckoutButton_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new CheckoutPage());

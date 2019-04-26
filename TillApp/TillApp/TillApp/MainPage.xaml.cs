@@ -13,6 +13,7 @@ namespace TillApp
     {
     
         int currentState = 1;
+        public static int login;
         double firstNumber, secondNumber;
         
         public MainPage()
@@ -21,24 +22,60 @@ namespace TillApp
             OnClear(this, null);
         }
 
-        private void Button_OnClicked(object sender, EventArgs e)
+        void SignOut(object sender, EventArgs e)
         {
+            login = 0;
 
+            string connectionString = "Server=18.216.25.150;Database=professionalpracticetillsystem;Uid=matt;Pwd=matt";
+            string selectQuery = String.Format("update product set product_quantity = 0 product_quantity >0;");
+            MySqlConnection cConn = new MySqlConnection(connectionString);
+            cConn.Open();
+
+
+            MySqlCommand command = new MySqlCommand(selectQuery, cConn);
+            System.Diagnostics.Debug.WriteLine("Connected");
+
+            command.Connection = cConn;
+            command.CommandText = selectQuery;
+            cConn.Close();
         }
 
         private async void CheckoutButton_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new CheckoutPage());
+            if (login ==1 )
+            {
+                await Navigation.PushAsync(new CheckoutPage());
+            }
+            else
+            {
+                await DisplayAlert("Login to be able to use this feature","", "Ok");
+            }
         }
           
         async void FoodButton_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new FoodPage());
+            
+            if (login == 1)
+            {
+                await Navigation.PushAsync(new FoodPage());
+            }
+            else
+            {
+                await DisplayAlert("Login to be able to use this feature", "", "Ok");
+            }
         }
 
         async void DrinksButton_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new DrinksPage());
+            
+            if (login == 1)
+            {
+                await Navigation.PushAsync(new DrinksPage());
+            }
+            else
+            {
+                await DisplayAlert("Login to be able to use this feature", "", "Ok");
+            }
         }
         
         
@@ -106,8 +143,7 @@ namespace TillApp
                 {
                     String name = (string)result["user_name"];
                     DisplayAlert("Login", "Welcome " + name, "Ok");
-                   // login = 1;
-                   // loggedOn();
+                    login = 1;
                 }
                
             }

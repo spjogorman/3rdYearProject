@@ -62,3 +62,4 @@ C:\Users\Matt\Documents\GitHub\3rdYearProject\TillApp\TillApp\TillApp.iOS\obj\iP
 C:\Users\Matt\Documents\GitHub\3rdYearProject\TillApp\TillApp\TillApp.iOS\obj\iPhone\Debug\TillApp.iOS.csproj.CopyComplete
 C:\Users\Matt\Documents\GitHub\3rdYearProject\TillApp\TillApp\TillApp.iOS\obj\iPhone\Debug\TillApp.iOS.exe
 C:\Users\Matt\Documents\GitHub\3rdYearProject\TillApp\TillApp\TillApp.iOS\obj\iPhone\Debug\TillApp.iOS.pdb
+C:\Users\Matt\Documents\GitHub\3rdYearProject\TillApp\TillApp\TillApp.iOS\bin\iPhone\Debug\TillApp.dll.mdb

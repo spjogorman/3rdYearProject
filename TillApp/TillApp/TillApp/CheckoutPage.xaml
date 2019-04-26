@@ -57,7 +57,11 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
+            <Label Text="Quantity" Style="{StaticResource LabelStyle}" VerticalOptions="FillAndExpand"  Grid.Row="0" Grid.Column="2" HorizontalTextAlignment="Start" />
+            <Label Text="Item" Style="{StaticResource LabelStyle}" VerticalOptions="FillAndExpand"  Grid.Row="0" Grid.Column="0" HorizontalTextAlignment="Start" />
+            <Label Text="Price" Style="{StaticResource LabelStyle}" VerticalOptions="FillAndExpand"  Grid.Row="0" Grid.Column="1" HorizontalTextAlignment="Center" />
         </Grid>
         
 
@@ -72,11 +76,9 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-            <Label Text="Quantity" Style="{StaticResource LabelStyle}" VerticalOptions="FillAndExpand"  Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" HorizontalTextAlignment="Start" />
-            <Label Text="Item" Style="{StaticResource LabelStyle}" VerticalOptions="FillAndExpand"  Grid.Row="0" Grid.Column="3" HorizontalTextAlignment="Start" />
-            <Label Text="Subtotal" Style="{StaticResource LabelStyle}" VerticalOptions="FillAndExpand"  Grid.Row="0" Grid.Column="4" HorizontalTextAlignment="Center" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            
             <ListView x:Name="ListViewchkout" >
                 <ListView.ItemTemplate>
                         <DataTemplate>
@@ -140,7 +142,7 @@
 
                 <!-- Number Input Label & Number boxes -->
                 <Frame Padding="5" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" OutlineColor="White">
-                    <Label x:Name="userInput" Text="User Input" Style="{StaticResource LabelStyle}" />
+                    <Label x:Name="userInput" Text="" Style="{StaticResource LabelStyle}" />
                 </Frame>
 
                 <Button Text="1" Clicked="OnSelectNum" Style="{StaticResource ButtonStyle}" Grid.Row="1" Grid.Column="0" />
