@@ -1,0 +1,277 @@
+/* Important links used
+https://dev.mysql.com/downloads/file/?id=484706
+
+https://blogs.oracle.com/mysql/how-to%3a-using-mysql-connectornet-with-windows-store-apps
+*/
+
+/* Sample testing code for making and inserting into tables
+CREATE TABLE CUSTOMERS(
+   ID INT NOT NULL,
+   name varchar(20),
+	name varchar(20),      
+   PRIMARY KEY (ID)
+);
+
+INSERT INTO food(food_id,food_name,food_price)
+   VALUES
+   (01,'Chicken',15.00
+);
+*/
+
+/*
+Merged into product table therefore irrelevant
+create table food(
+   food_id INT NOT NULL,
+   food_name VARCHAR(40) NOT NULL,
+   food_price float NOT NULL,
+   food_quantity INT NOT NULL,
+   PRIMARY KEY ( food_id) 
+);
+
+create table drink(
+   drink_id INT NOT NULL,
+   drink_name VARCHAR(40) NOT NULL,
+   drink_price float NOT NULL,
+   drink_quantity INT NOT NULL,
+   PRIMARY KEY (drink_id)
+);
+*/
+
+DROP DATABASE professionalpracticetillsystem;
+
+CREATE DATABASE professionalpracticetillsystem;
+
+use professionpracticetillsystem;
+
+
+/*Product and User tables */
+
+DROP TABLE product;
+
+create table product(
+	product_id INT NOT NULL,
+	product_name VARCHAR(50) NOT NULL,
+	product_price float NOT NULL,
+	product_quantity INT NOT NULL,
+	PRIMARY KEY(product_id)
+);
+
+DROP TABLE users;
+
+create table users(
+   user_id VARCHAR(40) NOT NULL,
+   user_name VARCHAR(40) NOT NULL,
+   PRIMARY KEY (user_id)
+);
+
+/* Populate user table with hashcoded passwords */
+INSERT INTO users(user_id,user_name)
+   VALUES
+   (MD5('12345'),'Matthew Bartley'
+);
+
+INSERT INTO users(user_id,user_name)
+   VALUES
+   (MD5('56789'),'Sean O Gorman'
+);
+
+INSERT INTO users(user_id,user_name)
+   VALUES
+   (MD5('11111'),'Neil Byrne'
+);
+
+/* 
+Food List(Products originally in 2 seperate tables)
+
+Chicken Kiev
+Beef
+Pork
+Pasta
+Meatballs
+Goujons
+Wings
+Chicken Burger
+Beef Burger
+Cod
+Ham
+Salmon
+Salad
+Fries
+Ribs
+Lamb Stew
+
+Drinks List
+
+Water
+Coke
+Fanta
+Coke Zero
+Diet Coke
+Sprite
+Lucozade
+Red Wine
+White Wine
+Ochard Thieves
+Hop House 13
+Guinness
+Outcider
+Sparkling Water
+Tea
+Coffee */
+
+/* Irrelevant code since food/drink was moved to one joint project table
+ DELETE FROM 'food' where food_id = 1; */
+
+/* Populate Product Table with food/drink */
+
+INSERT INTO product(product_id,product_name,product_price,product_quantity)
+   VALUES
+   (01,'Chicken Kiev',15.00,0);
+
+INSERT INTO product(product_id,product_name,product_price,product_quantity)
+   VALUES
+   (02,'Beef',20.00,0);
+
+INSERT INTO product(product_id,product_name,product_price,product_quantity)
+   VALUES
+   (03,'Pork',15.00,0);
+
+INSERT INTO product(product_id,product_name,product_price,product_quantity)
+   VALUES
+   (04,'Pasta',15.00,0);
+
+INSERT INTO product(product_id,product_name,product_price,product_quantity)
+   VALUES
+   (05,'Meatballs',15.00,0);
+
+INSERT INTO product(product_id,product_name,product_price,product_quantity)
+   VALUES
+   (06,'Chicken Goujons',15.00,0);
+
+INSERT INTO product(product_id,product_name,product_price,product_quantity)
+   VALUES
+   (07,'Beef Burger',15.00,0);
+
+INSERT INTO product(product_id,product_name,product_price,product_quantity)
+   VALUES
+   (08,'Chicken Burger',15.00,0);
+
+INSERT INTO product(product_id,product_name,product_price,product_quantity)
+   VALUES
+   (09,'Cod',15.00,0);
+
+INSERT INTO product(product_id,product_name,product_price,product_quantity)
+   VALUES
+   (10,'Ham',15.00,0);
+
+INSERT INTO product(product_id,product_name,product_price,product_quantity)
+   VALUES
+   (11,'Salmon',15.00,0);
+
+INSERT INTO product(product_id,product_name,product_price,product_quantity)
+   VALUES
+   (12,'Salad',15.00,0);
+
+INSERT INTO product(product_id,product_name,product_price,product_quantity)
+   VALUES
+   (13,'Fries',5.00,0);
+
+INSERT INTO product(product_id,product_name,product_price,product_quantity)
+   VALUES
+   (14,'Ribs',10.00,0);
+
+INSERT INTO product(product_id,product_name,product_price,product_quantity)
+   VALUES
+   (15,'Wings',8.00,0);
+
+
+INSERT INTO product(product_id,product_name,product_price,product_quantity)
+   VALUES
+   (16,'Water',0.00,0);
+
+INSERT INTO product(product_id,product_name,product_price,product_quantity)
+   VALUES
+   (17,'Coke',3.00,0);
+
+INSERT INTO product(product_id,product_name,product_price,product_quantity)
+   VALUES
+   (18,'Fanta',3.00,0);
+
+INSERT INTO product(product_id,product_name,product_price,product_quantity)
+   VALUES
+   (19,'Coke Zero',3.00,0);
+
+INSERT INTO product(product_id,product_name,product_price,product_quantity)
+   VALUES
+   (20,'Diet Coke',3.00,0);
+
+INSERT INTO product(product_id,product_name,product_price,product_quantity)
+   VALUES
+   (21,'Sprite',3.00,0);
+
+INSERT INTO product(product_id,product_name,product_price,product_quantity)
+   VALUES
+   (22,'Lucozade',3.00,0);
+
+INSERT INTO product(product_id,product_name,product_price,product_quantity)
+   VALUES
+   (23,'Red Wine',8.00,0);
+
+INSERT INTO product(product_id,product_name,product_price,product_quantity)
+   VALUES
+   (24,'White Wine',8.00,0);
+
+INSERT INTO product(product_id,product_name,product_price,product_quantity)
+   VALUES
+   (25,'Hop House',5.00,0);
+
+INSERT INTO product(product_id,product_name,product_price,product_quantity)
+   VALUES
+   (26,'Guinness',5.00,0);
+
+INSERT INTO product(product_id,product_name,product_price,product_quantity)
+   VALUES
+   (27,'Outcider',5.00,0);
+
+INSERT INTO product(product_id,product_name,product_price,product_quantity)
+   VALUES
+   (28,'Bulmers',5.00,0);
+
+INSERT INTO product(product_id,product_name,product_price,product_quantity)
+   VALUES
+   (29,'Tea',2.00,0);
+
+INSERT INTO product(product_id,product_name,product_price,product_quantity)
+   VALUES
+   (30,'Coffee',2.00,0);
+
+/* Sample update code if product name is changed */
+UPDATE product
+   SET product_name = "Broccoli Pasta"
+ WHERE product_id = 04;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
