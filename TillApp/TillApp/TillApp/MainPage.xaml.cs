@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TillApp.Model;
 using Xamarin.Forms;
 
 namespace TillApp
@@ -22,6 +21,7 @@ namespace TillApp
             OnClear(this, null);
         }
 
+        // Sign Out sets login variable to 0 and resets all quantities of the products to 0
         void SignOut(object sender, EventArgs e)
         {
             login = 0;
@@ -37,6 +37,7 @@ namespace TillApp
             cConn.Close();
         }
 
+        // Moves to checkout page if logged in
         private async void CheckoutButton_Clicked(object sender, EventArgs e)
         {
             if (login ==1 )
@@ -49,6 +50,7 @@ namespace TillApp
             }
         }
           
+        // Moves to food menu if logged in
         async void FoodButton_Clicked(object sender, EventArgs e)
         {
             
@@ -62,6 +64,7 @@ namespace TillApp
             }
         }
 
+        // Moves to drink menu if logged in
         async void DrinksButton_Clicked(object sender, EventArgs e)
         {
             
@@ -116,11 +119,15 @@ namespace TillApp
             this.userInput.Text = "0";
         }
 
+       // checks database for used id(converted to hashcode) and logs in if it exists in the database
        void SignIn(object sender, EventArgs e)
         {
             var dbID = userInput.Text;
+            // removes the , from user input
             var newdbID = dbID.Replace(",", "");
+            // server details to connect to database
             string connectionString = "Server=18.216.25.150;Database=professionalpracticetillsystem;Uid=matt;Pwd=matt";
+            // MD5() converts the user id to hashcode and checks if hashcode is on the users table
             string selectQuery = String.Format("select user_name from users where user_id = MD5('"+newdbID+"');");
             MySqlConnection cConn = new MySqlConnection(connectionString);
             cConn.Open();

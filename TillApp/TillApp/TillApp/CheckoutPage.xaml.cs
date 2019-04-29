@@ -21,16 +21,20 @@ namespace TillApp
 
         public CheckoutPage ()
 		{
+            // Database details for accessing it remotely 
             string connectionString = "Server=18.216.25.150;Database=professionalpracticetillsystem;Uid=matt;Pwd=matt";
             InitializeComponent ();
+            // function for details
             onLoad(connectionString);
 
         }
 
         
 
+        // Function for loading details upon starting the project
         private void onLoad(string connectionString)
         {
+            // selects the name,price and quantity of all products with more than 0 quantity
             string getNameQuantPrice = String.Format("select product_name name,product_price price,product_quantity quantity from product where product_quantity > 0;");
             MySqlConnection cConn = new MySqlConnection(connectionString);
             cConn.Open();
@@ -41,6 +45,7 @@ namespace TillApp
             commandGet.Connection = cConn;
             commandGet.CommandText = getNameQuantPrice;
             var result = commandGet.ExecuteReader();
+            // creates a list then adds each variable to the list
             List<CheckoutItem> items =new List<CheckoutItem>();
             while (result.Read())
             {
@@ -48,11 +53,14 @@ namespace TillApp
                 string name = (string)result["name"];
                 int quantity = (int)result["quantity"];
                 float price = (float)result["price"];
+                // total price
                 totalPrice += quantity * price;
                 items.Add(new CheckoutItem { Name = name, Price = price, Quantity = quantity});
             }
+            // close reader and connection
             result.Close();
             cConn.Close();
+            // Displays price upon loading
             DisplayAlert("Your Total Cost is: "+totalPrice, "Press finalize to complete your order", "Ok");
             ListViewchkout.ItemsSource = items;
         }
@@ -65,7 +73,7 @@ namespace TillApp
         }
 
 
-
+        // Finalize payment
         private async void CompleteButton_Clicked(object sender, EventArgs e)
         {
             bool answer = false;

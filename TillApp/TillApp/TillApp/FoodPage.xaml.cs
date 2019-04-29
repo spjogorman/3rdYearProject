@@ -22,11 +22,13 @@ namespace TillApp
 			OnClear(this, null);
 		}
 
+        // Moves to checkout page
         private async void CheckoutButton_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new CheckoutPage());
         }
 
+        // Sets quantity of items to 0 on database, sets login variable to 0 and moves to mainpage
         void SignOut(object sender, EventArgs e)
         {
             string connectionString = "Server=18.216.25.150;Database=professionalpracticetillsystem;Uid=matt;Pwd=matt";
@@ -43,6 +45,7 @@ namespace TillApp
 
         }
 
+        // searches button name on database and updates its quantity by 1
         private void Button_OnClicked(object sender, EventArgs e)
         {
             string connectionString = "Server=18.216.25.150;Database=professionalpracticetillsystem;Uid=matt;Pwd=matt";

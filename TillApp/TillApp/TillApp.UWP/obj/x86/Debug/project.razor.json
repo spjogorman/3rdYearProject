@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "c:\\Users\\Matt\\Documents\\GitHub\\3rdYearProject\\TillApp\\TillApp\\TillApp.UWP\\TillApp.UWP.csproj",
+  "TargetFramework": "v5.0",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  }
+}
